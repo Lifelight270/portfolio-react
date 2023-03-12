@@ -1,0 +1,119 @@
+.App .home-p {
+  background-image: linear-gradient(to right, rgba(24, 24, 24, 0.699), rgba(0, 0, 0, 0.822)), url("./image/intro-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  color: #fff;
+  min-height: 100vh;
+}
+.App .home-p .main-bar .Title .animate__pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+.App .home-p .main-bar .social-media a {
+  text-decoration: none;
+  color: #fff;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+.App .home-p .main-bar .social-media a:hover {
+  color: #24b68b;
+}
+.App .home-p .main-bar .menu-bar .navbar .navbar-toggler {
+  background-color: transparent;
+  color: transparent;
+}
+.App .home-p .main-bar .menu-bar .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("./image/toggle-bar.png");
+}
+.App .home-p .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  text-align: center;
+}
+.App .home-p .description .desp-box .developer {
+  font-size: 65px;
+  padding: 8px 0;
+}
+.App .home-p .description .desp-box p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #dee3e4;
+  padding: 8px 0;
+}
+.App .home-p .description .desp-box .hire-me {
+  padding: 13px 40px;
+  border-radius: 40px;
+  border: 2px solid #24b68b;
+  background: transparent;
+  color: #24b68b;
+  font-weight: 500;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.App .home-p .description .desp-box .hire-me:hover {
+  background-color: #24b68b;
+  color: #dee3e4;
+}
+.App .margin {
+  margin: 0 90px;
+}
+.App .margin .about-me {
+  padding: 60px 0;
+}
+.App .margin .about-me .title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 10px 0;
+  position: relative;
+}
+.App .margin .about-me .title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border-bottom: 3px solid #24b68b;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+.App .margin .about-me .descriptoion-2 {
+  margin-top: 90px;
+}
+.App .margin .about-me .descriptoion-2 .desp-2 p {
+  padding: 10px 60px 10px 0;
+}
+.App .margin .about-me .descriptoion-2 .desp-2 span {
+  color: #24b68b;
+}
+.App .margin .about-me .descriptoion-2 .detail {
+  font-size: 15px;
+}
+.App .margin .about-me .descriptoion-2 .detail p {
+  opacity: 0.8;
+  padding: 4px 0;
+}
+.App .margin .about-me .descriptoion-2 .detail p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.App .margin .about-me .descriptoion-2 .detail p .email {
+  color: #24b68b;
+}
+.App .margin .about-me .descriptoion-2 .detail .download-cv {
+  padding: 15px 50px;
+  background-color: #24b68b;
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 18px;
+  transition: 0.3s ease-in-out all;
+}
+.App .margin .about-me .descriptoion-2 .detail .download-cv:hover {
+  background-color: #1baa80;
+}/*# sourceMappingURL=App.css.map */
