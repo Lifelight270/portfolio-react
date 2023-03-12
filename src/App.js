@@ -1,8 +1,27 @@
 import React from "react";
+import { useCountUp } from "react-countup";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  useCountUp({
+    ref: "counter",
+    end: 100,
+    scrollSpyDelay: 1000,
+    enableScrollSpy: true,
+    suffix: "+",
+  });
+  const [text] = useTypewriter({
+    words: ["Janak.", "a Developer.", "a Freelancer."],
+    loop:0,
+    delaySpeed:2000,
+    typeSpeed:60,
+    deleteSpeed:60,
+    
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
+  }); 
+
   return (
     <div className="App">
       <div className="container-fluid home-p">
@@ -94,7 +113,8 @@ function App() {
         <div className="description">
           <div className="desp-box">
             <h2>Welcome</h2>
-            <h2 className="developer">I am a developer.</h2>
+            <h2 className="developer">I am {text}<Cursor/></h2>
+            
             <p>based in Kapilvastu, Nepal</p>
             <button className="hire-me">Hire me</button>
           </div>
@@ -148,6 +168,11 @@ function App() {
               <button className="download-cv">Download CV</button>
             </div>
           </div>
+        </div>
+
+        <div className="counter">
+          <span id="counter" />
+          
         </div>
       </div>
     </div>
